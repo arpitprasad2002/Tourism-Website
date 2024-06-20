@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/footer.css">    
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <ul class="navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                <div class="right">
+                    <input type="text" id="search">
+                    <button class="btn-search">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="slider">
+                <div class="slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="st first"><img width="800"
+                        src="images/taj mahal slider.jpeg"
+                        alt="Unavailable">
+                    </div>
+                    <div class="st"><img width="800"
+                        src="images/goa slider.jpeg"
+                        alt="Unavailable">
+                    </div>
+                    <div class="st"><img width="800"
+                        src="images/manali slider.jpeg"
+                        alt="Unavailable">
+                    </div>
+                    <div class="st"><img width="800"
+                        src="images/ladakh slider.jpeg" alt="Unavailable">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="a-b1"></div>
+                        <div class="a-b2"></div>
+                        <div class="a-b3"></div>
+                        <div class="a-b4"></div>
+                    </div>
+                </div>
+                <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                    <label for="radio4" class="m-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000)
+        </script>
+    </main>
+
+    <section>
+        <ul class="main-list">
+            <li>
+                <div class="first-row">
+                    <img class="pic" src="images/taj mahal.jpg"
+                        alt="Image 1">
+                    <div>
+                        <div>
+                            <p class="per-night"><span class="amount">Taj Mahal</span></p>
+                        </div>
+                        <div class="grey-text">An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife.</div>
+                        <br>
+                        <a class="read-more" href="services.html">Read more</a>
+
+                        <!-- <div class="place-name"> Place name</div> -->
+                    </div>
+                    <img class="pic"
+                        src="images/goa.jpg"
+                        alt="Image 2">
+                    <div>
+                        <div>
+                            <p class="per-night"><span class="amount">Goa</span> </p>
+                        </div>
+                        <div class="grey-text">Located on the Western Ghats of Konkan, Goa is known as the smallest and the fourth smallest populated state of India. Goa has more than 35 beaches. </div>
+                        <br>
+                        <a class="read-more" href="services.html">Read more</a>
+
+
+                    </div>
+            </li>
+            <li>
+                <div class="second-row">
+                    <img class="pic" src="images/Ladakh.jpg"
+                        alt="Image 1">
+                    <div>
+                        <div>
+                            <p class="per-night"><span class="amount">Ladakh</span></p>
+                        </div>
+                        <div class="grey-text">Ladakh is a mountainous region in North India. Leh, the main city is situated at 3500m above sea level nestled in the great Himalayan, Karakoram, Zanskar and Ladakh ranges. Ladakh is known for remote mountain beauty, studded with monasteries and stupas.</div>
+                        <br>
+                        <a class="read-more" href="services.html">Read more</a>
+                    </div>
+                    <img class="pic"
+                        src="images/manali.png"
+                        alt="Image 2">
+                    <div>
+                        <div>
+                            <p class="per-night"><span class="amount">Manali</span></p>
+                        </div>
+                        <div class="grey-text">A gift of the Himalayas to the world, Manali is a beautiful township nestled in the picturesque Beas River valley. It is a rustic enclave known for its cool climate and snow-capped mountains, offering respite to tourists escaping scorching heat of the plains.</div>
+                        <br>
+                        <a class="read-more" href="services.html">Read more</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+
+            <!-- <h3> TRAVELY </h3> -->
+            <br>
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti corrupti aliquid omnis ad
+                unde voluptatibus, quos ipsa dolores perspiciatis nobis obcaecati aperiam sapiente recusandae. Nihil
+                dolor, maxime, velit adipisci dolorum cupiditate necessitatibus recusandae, vero totam eligendi harum
+                ipsam nobis consequuntur minus nesciunt et. Iusto quaerat mollitia qui pariatur molestias.</p> -->
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020  designed by-saa</p>
+        </div>
+        <br>
+        <br>
+    </footer>
+
+</body>
+</html>
