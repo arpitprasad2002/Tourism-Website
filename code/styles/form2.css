@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.form2-title{
+  font-size: xx-large;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.outter-form{
+  margin: 55px;
+  padding: 25px;
+  /* background: linear-gradient(to right,#00093c,#2d0b00); */
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%)
+}
+.inner-form{
+  margin-top: 45px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+/* .radio-button{
+  display: flex;
+  flex-direction: column;
+} */
+/* .form2-radio-button{
+  width: 100%;
+} */
+.travel-form-text{
+  margin-bottom: 10px;
+  width: 100%;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.form2-submit-button{
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width:600px) {
+  .inner-form{
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+  
+}
